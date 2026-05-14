@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>公司出勤管理系統</title>
+<title>許文光建築師事務所出勤管理系統</title>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -131,7 +131,7 @@ tr:last-child td{border-bottom:none}tr:hover td{background:var(--s2)}
 </nav>
 <div class="tabs" id="tabs">
   <button class="tb tsp tte" id="ttb" onclick="showTeam()">👥 同仁請假總覽</button>
-  <button class="tb tsp thr" id="htb" onclick="openHR()">🔐 HR 主管</button>
+  <button class="tb tsp thr" id="htb" onclick="openHR()">🔐 HR後台管理</button>
 </div>
 <main id="main"></main>
 <div class="mb" id="hrm" style="display:none">
@@ -185,13 +185,13 @@ const HRPW = '1234';
 
 // 員工登入密碼（可自行修改）
 const EMP_PW = {
-  '郭宗銘': '0001',
-  '劉芝杏': '0002',
-  '陳碧真': '0003',
-  '黃美瑛': '0004',
-  '黃玉珠': '0005',
-  '蘇怡娟': '0006',
-  '黃信恆': '0007',
+  '郭宗銘': '0126',
+  '劉芝杏': '0730',
+  '陳碧真': '1207',
+  '黃美瑛': '0502',
+  '黃玉珠': '0610',
+  '蘇怡娟': '1225',
+  '黃信恆': '0629',
 };
 
 // 員工入職日期（西元年）
@@ -987,7 +987,7 @@ function showLoginScreen(){
   document.getElementById('main').innerHTML=`
     <div style="max-width:340px;margin:60px auto;text-align:center;padding:0 16px">
       <div style="font-size:48px;margin-bottom:16px">⏺</div>
-      <h2 style="font-size:20px;font-weight:700;margin-bottom:8px">公司出勤管理系統</h2>
+      <h2 style="font-size:20px;font-weight:700;margin-bottom:8px">許文光建築師事務所出勤管理系統</h2>
       <p style="font-size:13px;color:var(--ink2);margin-bottom:32px;line-height:1.7">請點選上方自己的名字，<br>輸入個人密碼後開始使用</p>
       <div style="background:var(--s);border:1px solid var(--bd);border-radius:14px;padding:20px;text-align:left">
         <div style="font-size:12px;font-weight:600;color:var(--ink2);margin-bottom:12px;letter-spacing:.06em;text-transform:uppercase">員工帳號</div>
@@ -1000,7 +1000,7 @@ function showLoginScreen(){
         <div style="border-top:1px solid var(--bd);margin:12px 0"></div>
         <button onclick="openHR()" style="display:flex;align-items:center;gap:10px;width:100%;background:none;border:none;border-radius:9px;padding:9px 10px;cursor:pointer;text-align:left;transition:background .15s;font-family:'Noto Sans TC',sans-serif" onmouseover="this.style.background='var(--s2)'" onmouseout="this.style.background='none'">
           <div style="width:32px;height:32px;border-radius:50%;background:var(--bl);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0">🔐</div>
-          <span style="font-size:14px;font-weight:500;color:var(--bl)">HR 主管</span>
+          <span style="font-size:14px;font-weight:500;color:var(--bl)">HR後台管理</span>
           <span style="margin-left:auto;font-size:11px;color:var(--ink3)">🔒</span>
         </button>
       </div>
