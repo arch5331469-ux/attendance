@@ -159,7 +159,7 @@ tr:last-child td{border-bottom:none}tr:hover td{background:var(--s2)}
 <main id="main"></main>
 <div class="mb" id="hrm" style="display:none">
   <div class="md">
-    <h3>🔐 主管 / HR 登入</h3>
+    <h3>🔐 後台管理登入</h3>
     <p>請輸入密碼以進入簽核介面</p>
     <input type="password" id="pw" placeholder="••••" onkeydown="if(event.key==='Enter')chkPw()">
     <div class="me" id="pwe">密碼錯誤，請再試一次</div>
@@ -171,8 +171,8 @@ tr:last-child td{border-bottom:none}tr:hover td{background:var(--s2)}
 </div>
 <div class="mb" id="bossm" style="display:none">
   <div class="md">
-    <h3>👑 老闆專屬入口</h3>
-    <p>請輸入老闆密碼</p>
+    <h3>👑 簽核專屬入口</h3>
+    <p>請輸入密碼</p>
     <input type="password" id="bosspw" placeholder="••••" onkeydown="if(event.key==='Enter')chkBossPw()">
     <div class="me" id="bosspwe">密碼錯誤，請再試一次</div>
     <div class="mdb">
@@ -217,7 +217,7 @@ const db = firebase.database();
 const EMPS = ['郭宗銘','劉芝杏','陳碧真','黃美瑛','黃玉珠','蘇怡娟','黃信恆'];
 const CLR  = ['#c8402a','#2456a4','#1e7d5a','#8b3db8','#d4750a','#b5386e','#2e7d9a'];
 const HRPW = '4473';
-const BOSS_PW = '8888'; // 👑 老闆專屬密碼（可自行修改）
+const BOSS_PW = '9828'; // 👑 老闆專屬密碼（可自行修改）
 
 // 員工登入密碼（可自行修改）
 const EMP_PW = {
