@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>公司出勤管理系統</title>
+<title>許文光建築師事務所出勤管理</title>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -216,7 +216,7 @@ const db = firebase.database();
 // ══════════════════════════════════════════════════
 const EMPS = ['郭宗銘','劉芝杏','陳碧真','黃美瑛','黃玉珠','蘇怡娟','黃信恆'];
 const CLR  = ['#c8402a','#2456a4','#1e7d5a','#8b3db8','#d4750a','#b5386e','#2e7d9a'];
-const HRPW = '1234';
+const HRPW = '4473';
 const BOSS_PW = '8888'; // 👑 老闆專屬密碼（可自行修改）
 
 // 員工登入密碼（可自行修改）
@@ -226,8 +226,8 @@ const EMP_PW = {
   '陳碧真': '0003',
   '黃美瑛': '0004',
   '黃玉珠': '0005',
-  '蘇怡娟': '0006',
-  '黃信恆': '0007',
+  '蘇怡娟': '1225',
+  '黃信恆': '0629',
 };
 
 // 員工入職日期（西元年）
@@ -1810,7 +1810,7 @@ showLoginScreen();
 function showLoginScreen(){
   document.getElementById('main').innerHTML=`
     <div style="max-width:100%;margin:10px auto;text-align:center;padding:0 16px">
-      <h2 style="font-size:20px;font-weight:700;margin-bottom:8px">公司出勤管理系統</h2>
+      <h2 style="font-size:20px;font-weight:700;margin-bottom:8px">許文光建築師事務所出勤管理</h2>
       <p style="font-size:13px;color:var(--ink2);margin-bottom:32px;line-height:1.7">請點選上方自己的名字，<br>輸入個人密碼後開始使用</p>
       <div style="background:var(--s);border:1px solid var(--bd);border-radius:14px;padding:20px;text-align:left">
         <div style="font-size:12px;font-weight:600;color:var(--ink2);margin-bottom:12px;letter-spacing:.06em;text-transform:uppercase">員工帳號</div>
